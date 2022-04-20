@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300;700;900&family=Square+Peg&display=swap');
+@import "animate.css";
+$mainColor: #1F3B4D;
+
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}

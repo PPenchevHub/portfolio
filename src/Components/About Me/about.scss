@@ -1,0 +1,119 @@
+@import "../../global.scss";
+
+.section {
+  background-color: $mainColor;
+  display: flex;
+  color: white;
+
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
+  .box{
+    flex: 0.5;
+    box-shadow:  0 6px 10px 0 rgb(0 0 0 / 20%);
+    margin: 2em 2em 2em 2em ;
+    display: block;
+
+    @include mobile{
+      margin: 0;
+
+    }
+  }
+
+  .left {
+
+    img{
+      margin-right: auto;
+      margin-left: 80px;
+      text-align: center;
+      justify-content: center;
+      width: 30%;
+      height: 30%;
+
+      }
+   
+    .download-btn{
+      justify-content: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 40px;
+      display: inline-block;
+      border-radius: 100px;
+      transition: all 0.2s;
+      background-color: white;
+      border:none;
+      cursor: pointer;
+      
+        &:hover{
+          transition: 1s ease-in-out;
+          background-color: $mainColor;
+          font-size: 18px;
+          color: white;
+        }
+    }
+
+
+    .aboutMe{ 
+        align-items: center;
+        padding-left: 50px;
+        justify-content: space-between;
+
+      @include mobile{
+        align-items: center;
+
+        h3{
+          padding-top: 1rem;
+          font-size: 3rem;
+        }
+      }
+        h3{
+            padding-top: 0.5rem;
+            font-size: 5rem;
+        }
+     
+        .desc{
+            text-align: justify;
+            width: 70%;
+            margin: 1em 0;
+           
+            line-height: 1.5;
+
+            @include mobile{
+                width: 80%;
+              }
+        }
+
+    }
+  }
+  .right {
+
+    .skillContainer{
+      display: inline-flex;
+    }
+
+    .title{
+        text-align: center;
+        padding-top: 2rem ;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+
+    }
+    ul{
+        width: 100%;
+        font-size: 1rem;
+        margin: 1em 1em ;
+        
+        .prof{
+          margin-bottom: 1rem;
+          text-decoration: underline;
+        }
+        li{
+            margin-bottom: 1rem;
+
+        }
+    }
+
+    }
+  }
+
