@@ -1,13 +1,30 @@
-import React from 'react'
+import {React, useState, useEffect} from 'react'
 import "./about.scss"
+import AnimationIntro from "../AnimationIntro/AnimationIntro";
 
 
 function About() {
+const [letterClass, setLetterClass] = useState('text-animate');
+
+useEffect(() => {
+    return setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+  }, [])
+
+
   return (
     <div className="section">
         <div className="box left">
             <div className="aboutMe">
-                <h3>Who I am </h3>
+                <h1>
+                    <AnimationIntro
+                        letterClass={letterClass}
+                        strArray={['W','h','o',' ','I',' ','a','m']}
+                        idx={15}
+                    />
+
+                </h1>
                 <p className='desc'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
                     sed diam nonumy eirmod tempor invidunt ut labore et dolore 
                     magna aliquyam erat, sed diam voluptua. At vero eos et accusam et 
