@@ -1,7 +1,8 @@
 import {React, useState, useEffect} from 'react'
-import "./about.scss"
+import "./about2.scss"
 import AnimationIntro from "../AnimationIntro/AnimationIntro";
-
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import { faJava, faReact, faCss3, faSass, faWordpress, faLinux, faPython} from '@fortawesome/free-brands-svg-icons';
 
 function About() {
 const [letterClass, setLetterClass] = useState('text-animate');
@@ -15,7 +16,7 @@ useEffect(() => {
 
   return (
     <div className="section">
-        <div className="box left">
+        <div className="box-left">
             <div className="aboutMe">
                 <h1>
                     <AnimationIntro
@@ -34,32 +35,45 @@ useEffect(() => {
                     <button className='download-btn'>Download CV </button>
             </div>
         </div>
-        <div className=" box right">
-        <h3 className='title'>My Skills</h3>
+        <div className="box-right">
             <div className="skillContainer">
+                      
+                            <span><i>
+                            <FontAwesomeIcon icon={faPython} />
+                            </i>
+                            </span>
+                            <span><i>
+                            <FontAwesomeIcon icon={faJava} />
+                            </i>
+                            </span> 
+                            <span><i>
+                            <FontAwesomeIcon icon={faReact} />
+                            </i>
+                            </span>    <span><i>
+                            <FontAwesomeIcon icon={faSass} />
+                            </i>
+                            </span>    <span><i>
+                            <FontAwesomeIcon icon={faWordpress} />
+                            </i>
+                            </span> 
+                            <span><i>
+                            <FontAwesomeIcon icon={faLinux} />
+                            </i>
+                            </span>
+                            <span><i>
+                            <FontAwesomeIcon icon={faLinux} />
+                            </i>
+                            </span>
+                            <span><i>
+                            <FontAwesomeIcon icon={faLinux} />
+                            </i>
+                            </span>
+                            <span><i>
+                            <FontAwesomeIcon icon={faLinux} />
+                            </i>
+                            </span>
                     
-                    <ul>
-                        <h3 className='prof'>Frontend</h3>
-                        <li>Html</li>
-                        <li>CSS</li>
-                        <li>Sass</li>
-                        <li>javascript</li>         
-                        <li>React</li>
-                    </ul>
-                    <ul>
-                        <h3 className='prof'>Backend</h3>
-                        <li>Linux</li>
-                        <li>Java</li>
-                        <li>Nodejs</li>
-                        <li>Postgreqsl</li>
-                        <li>MySql</li>
-                    </ul>
-                    <ul>
-                        <h3 className='prof'>Others</h3>
-                        <li>Wordpress</li>
-                        <li>Woocommerce</li>
-                        <li>Divi</li>
-                    </ul>
+                                         
             </div>
         </div>
     </div>

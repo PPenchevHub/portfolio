@@ -1,0 +1,93 @@
+@import "../../global.scss";
+
+.section{
+    background-color: $mainColor;
+  //  display: flex;
+    .box-left{
+        position: absolute;
+        left: 10%;
+        padding-top: 10%;
+        width: 35%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+
+        h1{
+            font-size: 53px;
+            color: #fff;
+        }
+        p{
+            color: #fff;
+            font-weight: 300;
+            min-width: fit-content;
+        }
+    }
+    .skillContainer{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       
+        flex-wrap: wrap;
+     
+        vertical-align: center;
+        width: 40%;
+        position: absolute;
+        right: 5%;
+        padding-top: 10%;
+        text-align: center;
+        justify-content: center;
+       // margin-right: 20px;
+       right: 10;
+       animation: pulse 2s infinite ;
+
+
+        span{
+            position: relative;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #282828, #202020);
+            box-shadow: 0 0 0 2px rgba(0,0,0, 0.4);
+            margin: 10px 10px 10px 10px;  
+
+            &::before{
+                content: " ";
+                position: absolute;
+                top: 3px;
+                left: 4px;
+                bottom: 14px;
+                right: 12px;
+                background: linear-gradient(90deg, #232323, #4a4a4a);
+                border-radius: 10px;
+                box-shadow: -10px -10px -10px rgba(255,255,255, 0.25), 10px 5px 10px rgba(0,0,0, 0.15);
+                border-left: 1px solid #0004;
+                border-bottom: 1px solid #0004;
+                border-top: 1px solid #0004;
+
+            }
+             i{
+                position: relative;
+                font-size: 38px;
+                color: #fff;
+            }
+        }
+
+        .skillIcon{
+            margin-bottom: 20px;
+            font-size: 60px;
+            color: #fff;
+            border: 1px solid white;
+            border-radius: 50px;
+
+          
+        }
+        
+        
+    }
+
+}
+/*imalo edno vreme v burgas i az obicham mnogo da qm chesyn i jivotyt ponqkoga 
+e mnogo hubav i mnogo mi lipsva da pisha na klaviatura i da rabotq neshto, 
+kydeto moga da pisha neshta, a ne da gledam shiban dolen smotan vmirisan ekran po cql den
+*/
