@@ -13,18 +13,25 @@ function Portfolio() {
     {
       id:"all",
       title: "All",
+      key: "1",
     }, 
     {
       id:"java",
       title: "Java",
+      key: "2",
+
     },
     {
       id:"React",
       title: "React",
+      key: "3",
+
     },
     {
       id:"Wordpress",
       title: "Wordpress",
+      key: "4",
+
     },
 
   ];
@@ -53,7 +60,8 @@ function Portfolio() {
         <h1>Portfolio</h1>
         <ul>
             {list.map((item) => (
-            <PortfolioList title={item.title} 
+            <PortfolioList key={item.id}
+                          title={item.title} 
                           active={selected === item.id}
                           setSelected={setSelected}
                           id={item.id}/>
@@ -61,7 +69,7 @@ function Portfolio() {
         </ul>
         <div className="container">
               {data.map((d) =>(
-                <div className="item">
+                <div key={d.id} className="item">
                     <img src={d.img} alt="" />
                     <h3>{d.title}</h3>
                 </div>

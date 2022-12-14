@@ -9,7 +9,7 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
-  box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 2px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
   
   .wrapper {
     padding: 1px 30px;
@@ -80,8 +80,9 @@
           height: 3px;
           background-color: $mainColor;
           transform-origin: left;
-          transition: all 2s ease;
+          transition: all 2s ease;  
         }
+
       }
     }
   }
@@ -95,6 +96,7 @@
     }
 
     .hamburger {
+
       span {
         &:first-child {
           background-color: white;

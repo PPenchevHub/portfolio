@@ -153,4 +153,11 @@ export const AllPortfolio = [
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
     },
   ];
-  
+  export const skills = [
+    "JavaScript",
+    "React",
+    "Next.js",
+    "Node",
+    "GraphQL",
+    "Material UI",
+  ];

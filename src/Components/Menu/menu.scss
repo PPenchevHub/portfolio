@@ -22,7 +22,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
     color: white;
     width: 60%;
@@ -30,16 +30,27 @@
     li {
       margin-bottom: 25px;
       a {
+        position: relative;
         font-size: inherit;
         color: inherit;
         text-decoration: none;
-        
+
+        &::before{
+          content: "";
+          position: absolute;
+          height: 2px;
+          transition: all .5s ;
+          background-color: crimson;
+          width: 0;   
+      
+        }
         &:hover {
           color: crimson;
-        }
-      }
-
-  
+          &::before{
+            width: 80%;         
+          }
+        }     
+      } 
     }
   }
 }
