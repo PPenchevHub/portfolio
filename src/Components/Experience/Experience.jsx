@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { React, useState } from "react";
 import "./experience.scss";
 import {Mail, GitHub, LinkedIn} from "@material-ui/icons"
 

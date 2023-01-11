@@ -7,8 +7,7 @@ import {skills} from "../../data";
 import AnimationIntro  from '../AnimationIntro/AnimationIntro'
 
 import { loadFull } from "tsparticles";
-import Particles from "react-tsparticles"
-import particlesConfig from "../../particle-config.js"
+
 
 function About() {
 const [letterClass, setLetterClass] = useState('text-animate');
@@ -26,7 +25,6 @@ useEffect(() => {
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
-  //<Particles options={particlesConfig} init={particlesInit} />
 
   return (
     <div className="section route bg-image background" id='aboutme'>
@@ -51,14 +49,15 @@ useEffect(() => {
                 occaecat cupidatat non proident, sunt in culpa qui officia 
                 deserunt mollit anim id est laborum.</p>
                 
-                <faLinux/>
-        </div>
+          
+                 </div>
         <div className="box-right">
-        <h1> 
-              {skillsArray.map(skill =>(
-                  <span className="rotatingText"><h1>{skill}</h1></span>
-              ) )}
-           </h1>
+    
+               <div className="skills-icons">
+                  </div>
+        
+
+      
 
       </div>
       
