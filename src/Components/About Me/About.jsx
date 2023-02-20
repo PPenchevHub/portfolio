@@ -7,6 +7,7 @@ import {skills} from "../../data";
 import AnimationIntro  from '../AnimationIntro/AnimationIntro'
 
 import { loadFull } from "tsparticles";
+import WordCloud from './WordCloud';
 
 
 function About() {
@@ -21,10 +22,6 @@ useEffect(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
   }, [])
-
-  const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  }, []);
 
   return (
     <div className="section route bg-image background" id='aboutme'>
@@ -52,12 +49,12 @@ useEffect(() => {
           
                  </div>
         <div className="box-right">
-    
+
+        <WordCloud/>
+
                <div className="skills-icons">
                   </div>
         
-
-      
 
       </div>
       

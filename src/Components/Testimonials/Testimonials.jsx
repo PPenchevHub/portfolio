@@ -1,42 +1,40 @@
 import "./testimonials.scss";
+import "/Users/ppenchev/Documents/React/portfolio/src/Components/About Me/stars.scss"
 
 export default function Testimonials() {
   const data = [
     {
       id: 1,
-      name: "хидко",
-      title: "CEO of Dönerladen",    
-      img:
-        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/twitter.png",
+      name: "Mark Griznyk",
+      title: "Caro-shop",    
+      img:"assets/man.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+        "Working with Plamen is a huge pleasure, because of his skill to explain complex technical problems and solutions even to non-technical people. ",
     },
     {
       id: 2,
-      name: "хидко",
-      title: "CEO of Dönerladen",
-      img:
-        "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/youtube.png",
+      name: "Sabine Schuttelmeyer ",
+      title: "Schnittker Möllmann Partners",
+      img: "assets/user.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+        "Plamen has exceeded our expectations in terms of his technical expertise, professionalism, and willingness to go above and beyond. I would highly recommend him to any organization looking for a skilled IT professional.",
       featured: true,
     },
     {
       id: 3,
-      name: "хидко",
-      title: "CEO of Dönerladen",
-      img:
-        "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: "assets/linkedin.png",
+      name: "Dorota Kot",
+      title: "Kollek-tief",
+      img: "assets/woman.png",
       desc:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+      "Plamen is  an excellent communicator and collaborator. They have been an asset to our team, contributing , sharing knowledge, and always willing to lend a helping hand",
     },
     
   ];
   return (
-    <div className="testimonials" id="testimonials">
+    <div className="testimonials route bg-image background" id="testimonials">
+        <div id="stars" />
+        <div id="stars2" />
+        <div id="stars3" />
       <h1>Testimonials</h1>
       <div className="container">
         {data.map((d) => (

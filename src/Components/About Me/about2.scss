@@ -28,7 +28,7 @@
        float: left;
         position: absolute;
         left: 5%;
-        padding-top: 5%;
+        padding-top: 10%;
         width: 35%;
         vertical-align: middle;
         display: table-cell;
@@ -82,13 +82,14 @@
       float: right;
        position: absolute;
        right: 5%;
-       padding-top: 5%;
+       padding-top: 10%;
        width: 50%;
        vertical-align: middle;
        display: table-cell;
        max-height: 90%;
        z-index: 1;
        justify-content: center;
+
 
 
       h1{
@@ -128,6 +129,25 @@
         }
 
        
+      }
+      .content{
+        color: white;
+
+        .tagcloud{
+          position: static !important;
+
+          .tagcloud--item{
+            transition: all 1s ease-out ;
+
+            &:hover {
+              color: crimson;
+              font-size: 1.3rem;
+              opacity: 1 !important;
+              z-index: 100 !important;
+          }
+        }
+        }
+      
       }
      
 
