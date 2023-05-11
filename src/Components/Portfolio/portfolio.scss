@@ -10,7 +10,7 @@
     font-size: 50px;
     overflow: hidden;
 
-    @include mobile{
+    @include mobile {
       font-size: 20px;
     }
   }
@@ -21,21 +21,21 @@
     list-style: none;
     display: flex;
     cursor: pointer;
-    
-    li{
+
+    li {
       font-size: 14px;
       margin-right: 50px;
       padding: 10px;
       border-radius: 10px;
       overflow: hidden;
-      
-      &.active{
-          background-color: $mainColor;
-          color: white;
+
+      &.active {
+        background-color: $mainColor;
+        color: white;
       }
     }
 
-    @include mobile{
+    @include mobile {
       margin: 10px 0;
       flex-wrap: wrap;
       justify-content: center;
@@ -48,9 +48,11 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 
-    @include mobile{
+    @include mobile {
       width: 100%;
+      margin-top: 20px;
     }
 
     .item {
@@ -64,17 +66,19 @@
       justify-content: center;
       color: white;
       position: relative;
-      transition: all .5s ease;
+      transition: all 0.5s ease;
       cursor: pointer;
 
-      @include mobile{
+      @include mobile {
         width: 130px;
         height: 100px;
+        margin: 10px;
       }
 
       h3 {
         position: absolute;
         font-size: 20px;
+        z-index: 2;
       }
 
       img {
@@ -93,4 +97,129 @@
       }
     }
   }
-}
+
+  
+      .item {
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+  
+        img {
+          width: 100%;
+          height: auto;
+          transition: all 0.3s ease;
+  
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+  
+        h3 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: rgba(0,0,0,0.7);
+          color: #fff;
+          width: 100%;
+          padding: 10px;
+          margin: 0;
+        }
+      }
+  
+      .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transition: all 0.5s ease-in-out;
+        
+        &.show-popup {
+          top: 0;
+        }
+
+      
+        .popup-inner {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 80%;
+          max-width: 600px;
+          height: 80%;
+          max-height: 400px;
+          background-color: white;
+          padding: 2rem;
+          transform: translateY(-100%);
+          transition: all 0.5s ease-in-out;
+
+            &.show-popup {
+            transform: translateY(0%);
+          }
+
+      
+          .popup-left {
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+      
+            img {
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+      
+          .popup-right {
+            width: 50%;
+            height: 50%;
+            padding-left: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+      
+            h2 {
+              font-size: 2rem;
+              margin-bottom: 1rem;
+            }
+      
+            p {
+              font-size: 1.2rem;
+              line-height: 1.5;
+              margin-bottom: 2rem;
+            }
+      
+            button {
+              position: absolute;
+              top: 10px;
+              right: 10px;
+              align-self: flex-end;
+              font-size: 1rem;
+              padding: 0.5rem 1rem;
+              border: none;
+              background-color: #1F3B4D;
+              color: white;
+              cursor: pointer;
+              transition: background-color 0.3s ease-in-out;
+
+      
+              &:hover {
+                background-color: crimson;
+              }
+            }
+          }
+        }
+      }
+      
+      
+  }
+  
+     
