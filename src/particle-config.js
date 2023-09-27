@@ -127,7 +127,7 @@ const particleConfig = {
         "delay": 1,
         "pauseOnStop": false,
         "quantity": 1
-      },
+      },  
       "light": {
         "area": {
           "gradient": {

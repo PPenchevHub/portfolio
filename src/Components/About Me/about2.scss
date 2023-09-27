@@ -1,8 +1,6 @@
 @import "../../global.scss";
 
-
-
-.section{
+.section {
   background-color: $mainColor;
   height: 100%;
   position: relative;
@@ -18,138 +16,187 @@
       width: 50px;
       animation: arrowBlink 2s infinite;
       transform: rotate(90deg);
+
+      @include mobile{
+        visibility: hidden;
+      }
+
     }
   }
 
+  .box-left {
+    display: flex;
+    float: left;
+    position: absolute;
+    left: 5%;
+    padding-top: 10%;
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+    z-index: 1;
 
-    
-    .box-left{  
-      display: flex;
-       float: left;
+    h1 {
+      font-size: 40px;
+      color: #fff;
+
+      &:before {
+        content: "";
         position: absolute;
-        left: 5%;
-        padding-top: 10%;
-        width: 35%;
-        vertical-align: middle;
-        display: table-cell;
-        max-height: 90%;
-        z-index: 1;
+        height: 2px;
+        background-color: crimson;
+        width: 70px;
+        left: 0;
 
-
-        h1{
-            font-size: 53px;
-            color: #fff;
-            &:before{
-              content: "";
-              position: absolute;
-              height: 2px;
-              background-color: crimson;
-              width: 100px;
-             left: 0;
-            }
+        @include mobile{
+            left: auto;
         }
-        p{
-            color: #fff;
-            font-weight: 300;
-            min-width: fit-content;
-        }
+      }
+    }
 
-        a {
-          position: absolute;
-          bottom: 40px;
-          left: 40%;
+    p {
+      color: #fff;
+      font-weight: 300;
+      min-width: fit-content;
+    }
+
+    a {
+      position: absolute;
+      bottom: 40px;
+      left: 40%;
+
+      img {
+        width: 5px;
+        animation: arrowBlink 2s infinite;
+      }
+
+      
+
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+
+    @include mobile {
+      position: relative;
+      width: 90%;
+      height: 60%;
+      padding-top: 5%;
+      text-align: center;
+      justify-content: center;
+
+      h1 {
+        font-size: 20px;
+        
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .btn-download{
+      display: inline-block;
+      flex-direction: row;
+      margin-top: 30px;
+      margin-right: 10px;
+      padding: 10px 22px 8px 22px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+      background-color: crimson;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     
-          img {
-            width: 5px;
-            animation: arrowBlink 2s infinite;
-          }
-    
-          @keyframes arrowBlink {
-            100% {
-              opacity: 0;
-            }
-          }
+      &:hover {
+        background-color: white;
+        color: crimson;
+      }
+    }
+  
   }
 
-        @include mobile {
-          position: relative;
-          left: auto;
-          }
-        
+  .box-right {
+    display: flex;
+    float: right;
+    position: absolute;
+    right: 5%;
+    padding-top: 10%;
+    width: 50%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+    z-index: 1;
+    justify-content: center;
+
+    h1 {
+      font-size: 40px;
+      color: #fff;
     }
-    .box-right{  
-      display: flex;
-      float: right;
-       position: absolute;
-       right: 5%;
-       padding-top: 10%;
-       width: 50%;
-       vertical-align: middle;
-       display: table-cell;
-       max-height: 90%;
-       z-index: 1;
-       justify-content: center;
 
-
-
-      h1{
-          font-size: 53px;
-          color: #fff;
-      }
-      p{
-          color: #fff;
-          font-weight: 300;
-          min-width: fit-content;
-      }
-
-      @include mobile {
-        position: relative;
-        left: auto;
-        }
-
-
-        .skills-icons{
-        
-          display: grid;
-         // flex-direction: column;
-         grid-template-columns: max-content;
-          font-size: 3rem;
-          color: white;
-          margin-left: 20%; 
-
-            span{
-             // margin: 3px;
-             margin-top: 5px;
-                &:hover{
-                  font-size: 3.5rem;
-                  color: crimson;
-                  transition: all .5s ease-out;
-                }
-                }
-        }
-
-       
-      }
-      .content{
-        color: white;
-
-        .tagcloud{
-          position: static !important;
-
-          .tagcloud--item{
-            transition: all 1s ease-out ;
-
-            &:hover {
-              color: crimson;
-              font-size: 1.3rem;
-              opacity: 1 !important;
-              z-index: 100 !important;
-          }
-        }
-        }
-      
-      }
-     
-
-
+    p {
+      color: #fff;
+      font-weight: 300;
+      min-width: fit-content;
     }
+
+    @include mobile {
+      position: relative;
+      width: 90%;
+      height: 40%;
+      padding-top: 5%;
+      text-align: center;
+      overflow: hidden;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .skills-icons {
+      display: grid;
+      grid-template-columns: max-content;
+      font-size: 3rem;
+      color: white;
+      margin-left: 20%;
+
+      span {
+        margin-top: 5px;
+        &:hover {
+          font-size: 3.5rem;
+          color: crimson;
+          transition: all .5s ease-out;
+        }
+      }
+    }
+  }
+
+  .content {
+    color: white;
+
+    .tagcloud {
+      position: static !important;
+
+      .tagcloud--item {
+        transition: all 1s ease-out;
+
+        &:hover {
+          color: crimson;
+          font-size: 1.2rem;
+          opacity: 1 !important;
+          z-index: 100 !important;
+        }
+      }
+    }
+  }
+}

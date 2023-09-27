@@ -37,16 +37,16 @@ useEffect(() => {
               strArray={aboutMeArray}
               idx={15}
             /></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna 
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit
-               esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia 
-                deserunt mollit anim id est laborum.</p>
-                
-          
+            <p>Hey there! I'm a friendly software developer from Bulgaria specializing 
+               in web applications and beautiful websites. I love tackling challenging 
+               problems and constantly learning new languages and technologies.
+               Crafting innovative solutions and creating user-friendly experiences is 
+               my passion. I thrive in collaborative environments and believe in the power
+               of effective communication.
+               Let's connect and create amazing software together!
+            </p>
+            <button className="btn-download">Hire me </button>
+            <button className="btn-download">Resume</button>
                  </div>
         <div className="box-right">
 

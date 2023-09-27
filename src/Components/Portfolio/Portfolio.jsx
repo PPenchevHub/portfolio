@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import PortfolioList from '../PortfolioList/PortfolioList';
 import './portfolio.scss'
-import {AllPortfolio, JavaPortfolio, ReactPortfolio, WordpressPortfolio} from "../../data"
+import { AllPortfolio, JavaPortfolio, ReactPortfolio, WordpressPortfolio } from "../../data"
+import Popup from './Popup';
+import AnimationIntro from '../AnimationIntro/AnimationIntro';
 
 function Portfolio() {
   const [selected, setSelected] = useState("all") 
   const [data, setData] = useState([])
   const [selectedItem, setSelectedItem] = useState(null)
+
+  const [letterClass, setLetterClass] = useState('text-animate');
+  const aboutMeArray = ['P', 'o', 'r', 't', 'f','o','l', 'i','o']
 
   const list = [
     {
@@ -15,17 +20,17 @@ function Portfolio() {
       key: "1",
     }, 
     {
-      id:"java",
-      title: "Java",
+      id:"backend",
+      title: "Backend",
       key: "2",
     },
     {
-      id:"React",
-      title: "React",
+      id:"frontend",
+      title: "Frontend",
       key: "3",
     },
     {
-      id:"Wordpress",
+      id:"wordpress",
       title: "Wordpress",
       key: "4",
     },
@@ -36,13 +41,13 @@ function Portfolio() {
       case "all":
         setData(JavaPortfolio.concat(ReactPortfolio, WordpressPortfolio));
         break;
-      case "java":
+      case "backend":
         setData(JavaPortfolio);
         break;
-      case "React":
+      case "frontend":
         setData(ReactPortfolio);
         break;
-      case "Wordpress":
+      case "wordpress":
         setData(WordpressPortfolio);
         break;
       default:
@@ -51,14 +56,27 @@ function Portfolio() {
     }
   },[selected])
 
+  useEffect(() => {
+    return setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+  }, [])
+
   function handleItemClick(item) {
     setSelectedItem(item);
   }
 
+  function handleClosePopup() {
+    setSelectedItem(null);
+  }
+
   return (
-    <div className='portfolio' id='portfolio'>
-      <h1>Portfolio</h1>
-      <ul>
+    <div className='portfolio'>
+     <h1>  <AnimationIntro
+              letterClass={letterClass}
+              strArray={aboutMeArray}
+              idx={15}
+            /></h1>      <ul>
         {list.map((item) => (
           <PortfolioList 
             key={item.id}
@@ -71,34 +89,17 @@ function Portfolio() {
       </ul>
       <div className="container">
         {data.map((d) =>(
-          <div key={d.id} className="item" onClick={() => handleItemClick(d)}>
+          <div key={d.title} className="item" onClick={() => handleItemClick(d)}>
             <img src={d.img} alt="" />
             <h3>{d.title}</h3>
           </div>
         ))}
       </div>
       {selectedItem && (
-       
-       <div className="popup ">
-       
-       <div className="popup-inner">
-         <div className="popup-left">
-           <img src={selectedItem.img} alt="" />
-         </div>
-         <div className="popup-right">
-  <button onClick={() => setSelectedItem(null)}>X</button>
-  <h2>{selectedItem.title}</h2>
-  <p>{selectedItem.description}</p>
-        {selectedItem.liveLink && <a href={selectedItem.liveLink} target="_blank" rel="noopener noreferrer">Live Link</a>}
-         {selectedItem.githubLink && <a href={selectedItem.githubLink} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i> Github</a>}
-  </div>
-
-       </div>
-     </div>
-     
+        <Popup selectedItem={selectedItem} handleClosePopup={handleClosePopup} />
       )}
     </div>
   )
 }
 
-export default Portfolio 
+export default Portfolio
