@@ -1,5 +1,5 @@
 import {React, useState, useEffect, useCallback} from 'react'
-import "./stars.scss"
+//import "./stars.scss"
 import "./about2.scss"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faJava, faReact, faSass, faWordpress, faLinux, faPython} from '@fortawesome/free-brands-svg-icons';
