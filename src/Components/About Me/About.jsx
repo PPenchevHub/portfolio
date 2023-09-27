@@ -13,8 +13,6 @@ import WordCloud from './WordCloud';
 function About() {
 const [letterClass, setLetterClass] = useState('text-animate');
 const aboutMeArray = ['A', 'b', 'o', 'u', 't',' ','m', 'e']
-const skillsArray = ['Java', 'Python', 'React', 'Wordpress', 'Linux']
-
 
 
 useEffect(() => {
