@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Popup.scss";
 
-import { FaWordpress, FaAngular, FaReact, FaDev } from "react-icons/fa";
+import { FaWordpress, FaReact } from "react-icons/fa";
 
 
 function Popup({ selectedItem, handleClosePopup }) {

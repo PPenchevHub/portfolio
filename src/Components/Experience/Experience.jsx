@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import "./experience.scss";
-import {Mail, GitHub, LinkedIn} from "@material-ui/icons"
+import {Mail} from "@material-ui/icons"
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);

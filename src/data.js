@@ -1,5 +1,5 @@
 
-import { FaWordpress, FaAngular, FaReact, FaDev } from "react-icons/fa";
+//import { FaWordpress, FaAngular, FaReact, FaDev } from "react-icons/fa";
 
  export const JavaPortfolio = [
     {

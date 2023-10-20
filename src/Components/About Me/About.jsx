@@ -1,12 +1,8 @@
-import {React, useState, useEffect, useCallback} from 'react'
+import {React, useState, useEffect } from 'react'
 //import "./stars.scss"
 import "./about2.scss"
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faJava, faReact, faSass, faWordpress, faLinux, faPython} from '@fortawesome/free-brands-svg-icons';
-import {skills} from "../../data";
 import AnimationIntro  from '../AnimationIntro/AnimationIntro'
 
-import { loadFull } from "tsparticles";
 import WordCloud from './WordCloud';
 
 
