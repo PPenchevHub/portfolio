@@ -84,7 +84,7 @@ function Intro() {
       </div>
       <div className="left">
         <div className="imgContainer">
-            <img src='./assets/Headshot.png'></img>
+            <img src='./assets/Headshot.png' alt='pic of me'></img>
         </div>
       </div>
     </div>
