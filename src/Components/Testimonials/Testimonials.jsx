@@ -1,5 +1,5 @@
 import "./testimonials.scss";
-import "/Users/ppenchev/Documents/React/portfolio/src/Components/About Me/stars.scss"
+import "../About Me/stars.scss"
 
 export default function Testimonials() {
   const data = [
