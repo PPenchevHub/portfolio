@@ -23,6 +23,7 @@ function Intro() {
     ',',
   ]
   const jobArray2 = [
+    ' ',
     'f',
     'r',
     'e',
@@ -62,21 +63,26 @@ function Intro() {
               strArray={nameArray}
               idx={15}
             />
+                          <br />
             
-            <br />
             <AnimationIntro
               letterClass={letterClass}
               strArray={jobArray}
               idx={22}
             />
-            <br />
             <AnimationIntro
               letterClass={letterClass}
               strArray={jobArray2}
               idx={32}
             />
           </h1>
+          <div className="contactSection">
+              <button className="btn-download">Contact me </button>
+              <p>or check who I am first :)</p>
+          </div>
         </div>
+
+
         <a href="#portfolio">
           <img src="assets/down.png" alt="" />
         </a>
@@ -84,7 +90,7 @@ function Intro() {
       </div>
       <div className="left">
         <div className="imgContainer">
-            <img src='./assets/Headshot.png' alt='pic of me'></img>
+            <img src='./assets/programmer.png' alt='pic of me'></img>
         </div>
       </div>
     </div>

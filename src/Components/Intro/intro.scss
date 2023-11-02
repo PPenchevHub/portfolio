@@ -2,7 +2,7 @@
 
 .intro {
   background-color: white;
-  display: flex;
+  display: grid;
 
   @include mobile{
     flex-direction: column;
@@ -10,11 +10,16 @@
   }
 
   .left {
-    flex: 0.5;
+   // flex: 0.5;
+
     overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    z-index: 0;
 
     .imgContainer {
-      margin: 5% 10% 10% 10%;
+      margin: 40% 20% 5% 0;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -25,7 +30,7 @@
       }
 
       img {
-        height: 90%;
+        width: 100%;
 
         @include mobile{
           height: 50%;
@@ -35,13 +40,15 @@
     }
   }
   .right {
-    flex: 0.5;
+   width: 70%;
+   position: relative;
+   z-index: 1;
 
     .wrapper {
       width: 80%;
       height: 90%;
-      margin-left: 20%;
-      top: 40%;
+      margin-left: 10%;
+      top: 20%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -59,7 +66,7 @@
 
       h1 {
         font-size: 50px;
-        margin: 15% 0;
+        margin: 5% 0 0;
         font-family: 'Poppins';
 
 
@@ -113,10 +120,47 @@
             }
         }
       }
+     
     }
+    .contactSection{
+      display: flex;
+
+      .btn-download{
+        display: inline-block;
+        width: 20%;
+        flex-direction: row;
+        margin-right: 10px;
+        padding: 10px 22px ;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: crimson;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      
+        &:hover {
+          background-color: white;
+          color: crimson;
+        }
+      }
+
+      p{
+          padding: 10px;
+          color: $mainColor;
+          font-size: 20px;
+          font-family: 'Poppins';
+          font-style: bold;
+      }
+
+    }
+   
     a {
       position: absolute;
-      bottom: 0;
+      bottom: 10%;
       left: 45%;
 
       img {
@@ -130,5 +174,6 @@
         }
       }
     }
+   
   }
 }

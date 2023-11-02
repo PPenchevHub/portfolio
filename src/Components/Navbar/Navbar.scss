@@ -3,13 +3,13 @@
 .navbar {
   width: 100%;
   height: auto;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   color: $mainColor;
   position: fixed;
   top: 0;
   z-index: 3;
   transition: all 1s ease;
-  box-shadow: 0 2px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+  //box-shadow: 0 2px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
   
   .wrapper {
     padding: 1px 30px;
@@ -90,6 +90,8 @@
   &.active {
     background-color: $mainColor;
     color: white;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+
 
     .logo{
       color: white !important;
