@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import AnimationIntro  from '../AnimationIntro/AnimationIntro'
 import './intro.scss'
+import Pointer from '../PointerComponent/Pointer'
 
 function Intro() {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -77,16 +78,15 @@ function Intro() {
             />
           </h1>
           <div className="contactSection">
+          <a href='#contact'>
               <button className="btn-download">Contact me </button>
+              </a>
               <p>or check who I am first :)</p>
           </div>
         </div>
 
 
-        <a href="#portfolio">
-          <img src="assets/down.png" alt="" />
-        </a>
-
+       <Pointer page={"#aboutme"}/>
       </div>
       <div className="left">
         <div className="imgContainer">

@@ -4,6 +4,7 @@ import './portfolio.scss'
 import { AllPortfolio, JavaPortfolio, ReactPortfolio, WordpressPortfolio } from "../../data"
 import Popup from './Popup';
 import AnimationIntro from '../AnimationIntro/AnimationIntro';
+import Pointer from '../PointerComponent/Pointer';
 
 function Portfolio() {
   const [selected, setSelected] = useState("all") 
@@ -71,7 +72,8 @@ function Portfolio() {
   }
 
   return (
-    <div className='portfolio'>
+    
+    <div className='portfolio' id='portfolio'>
      <h1>  <AnimationIntro
               letterClass={letterClass}
               strArray={aboutMeArray}
@@ -95,9 +97,12 @@ function Portfolio() {
           </div>
         ))}
       </div>
+
       {selectedItem && (
         <Popup selectedItem={selectedItem} handleClosePopup={handleClosePopup} />
       )}
+            <Pointer page={"#testimonials"}/>
+
     </div>
   )
 }

@@ -124,10 +124,11 @@
     }
     .contactSection{
       display: flex;
+      a{
+        position: static;
 
       .btn-download{
         display: inline-block;
-        width: 20%;
         flex-direction: row;
         margin-right: 10px;
         padding: 10px 22px ;
@@ -148,6 +149,7 @@
           border: 1px solid crimson;
         }
       }
+    }
 
       p{
           padding: 10px;
@@ -162,18 +164,7 @@
     a {
       position: absolute;
       bottom: 10%;
-      left: 45%;
-
-      img {
-        width: 60px;
-        animation: arrowBlink 2s infinite;
-      }
-
-      @keyframes arrowBlink {
-        100% {
-          opacity: 0;
-        }
-      }
+      left: 30%;
     }
    
   }
