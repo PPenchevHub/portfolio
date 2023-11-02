@@ -14,11 +14,11 @@ function Portfolio() {
   const aboutMeArray = ['P', 'o', 'r', 't', 'f','o','l', 'i','o']
 
   const list = [
-    {
-      id:"all",
-      title: "All",
-      key: "1",
-    }, 
+    // {
+    //   id:"all",
+    //   title: "All",
+    //   key: "1",
+    // }, 
     {
       id:"backend",
       title: "Backend",
@@ -38,9 +38,9 @@ function Portfolio() {
 
   useEffect(() =>{
     switch (selected) {
-      case "all":
-        setData(JavaPortfolio.concat(ReactPortfolio, WordpressPortfolio));
-        break;
+     // case "all":
+       // setData(JavaPortfolio.concat(ReactPortfolio, WordpressPortfolio));
+        //break;
       case "backend":
         setData(JavaPortfolio);
         break;
