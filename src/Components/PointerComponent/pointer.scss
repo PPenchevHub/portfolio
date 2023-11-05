@@ -19,8 +19,8 @@ a {
     }
    
   }
-  // @include mobile {
-  //   visibility: hidden;
-  //  }
+  @include mobile {
+    bottom: 10% ;
+  }
 
 }

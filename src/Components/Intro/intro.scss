@@ -89,6 +89,12 @@
         margin: 5% 0 0;
         font-family: 'Poppins';
 
+        @include mobile{
+          font-size: 2.4rem;
+          line-height: 1.4;
+          margin-top: 30% ;
+        }
+
 
         &::before{
           content: '<h1>';
@@ -109,9 +115,6 @@
           opacity: 0.6;
         }
 
-        @include mobile{
-          font-size: 2.5rem;
-        }
       }
       h3 {
         font-family: 'Square Peg';
@@ -194,7 +197,7 @@
       left: 30%;
 
       @include mobile{
-        bottom: 5%;
+        bottom: 1%;
         left: 40%;
       }
     }
