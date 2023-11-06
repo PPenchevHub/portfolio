@@ -9,7 +9,7 @@
        height: 100dvh;
         position: relative;
         //top: 60px;
-        scroll-behavior: smooth;
+       // scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none; //for firefox
         &::-webkit-scrollbar{
