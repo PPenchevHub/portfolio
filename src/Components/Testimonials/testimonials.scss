@@ -27,6 +27,7 @@
     }
 
     @include mobile{
+      position: relative;
       font-size: 30px;
       margin-top: 15%;
     }
@@ -125,7 +126,7 @@
 
         @include mobile{
           font-size: 12px;
-          padding: 0;
+          padding: 5%;
           height: 50%;
         }
       }
