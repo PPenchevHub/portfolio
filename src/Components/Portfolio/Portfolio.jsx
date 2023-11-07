@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PortfolioList from '../PortfolioList/PortfolioList';
 import './portfolio.scss'
-import { AllPortfolio, JavaPortfolio, ReactPortfolio, WordpressPortfolio } from "../../data"
+import { AllPortfolio, Frontend, Backend, WordpressPortfolio } from "../../data"
 import Popup from './Popup';
 import AnimationIntro from '../AnimationIntro/AnimationIntro';
 import Pointer from '../PointerComponent/Pointer';
@@ -21,19 +21,19 @@ function Portfolio() {
     //   key: "1",
     // }, 
     {
+      id:"frontend",
+      title: "Frontend",
+      key: "1",
+    },
+    {
       id:"backend",
       title: "Backend",
       key: "2",
     },
     {
-      id:"frontend",
-      title: "Frontend",
-      key: "3",
-    },
-    {
       id:"wordpress",
       title: "Wordpress",
-      key: "4",
+      key: "3",
     },
   ];
 
@@ -43,16 +43,16 @@ function Portfolio() {
        // setData(JavaPortfolio.concat(ReactPortfolio, WordpressPortfolio));
         //break;
       case "backend":
-        setData(JavaPortfolio);
+        setData(Backend);
         break;
       case "frontend":
-        setData(ReactPortfolio);
+        setData(Frontend);
         break;
       case "wordpress":
         setData(WordpressPortfolio);
         break;
       default:
-        setData(AllPortfolio);
+        setData(Frontend);
         break;
     }
   },[selected])
