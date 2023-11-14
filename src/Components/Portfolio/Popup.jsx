@@ -1,7 +1,11 @@
 import React from 'react';
 import "./Popup.scss";
 
-import { FaWordpress, FaReact } from "react-icons/fa";
+import { FaWordpress, FaReact,FaJava, FaCss3, FaSass, FaDatabase} from "react-icons/fa";
+import {SiSpringboot, SiSpringsecurity, SiJsonwebtokens, SiElementor, SiJavascript} from 'react-icons/si';
+import {SiHibernate} from 'react-icons/si';
+import {BiLogoPostgresql} from 'react-icons/bi'
+
 
 
 function Popup({ selectedItem, handleClosePopup }) {
@@ -22,8 +26,33 @@ function Popup({ selectedItem, handleClosePopup }) {
             return <FaReact key={technology} />;
           } else if (technology === "wordpress") {
             return <FaWordpress key={technology} />;
-          } else {
-            return null;
+          } else if (technology === "elementor") {
+            return <SiElementor key={technology} />;
+          }else if (technology === "javascript") {
+            return <SiJavascript key={technology} />;
+          }  else if (technology === "Springboot") {
+            return <SiSpringboot key={technology} />;
+          }else if (technology === "Postgresql") {
+            return <BiLogoPostgresql key={technology} />;
+          }else if (technology === "JWT") {
+            return <SiJsonwebtokens key={technology} />;
+          }
+          else if (technology === "Hibernate") {
+            return <SiHibernate key={technology} />;
+          }else if (technology === "JPA") {
+            return <FaDatabase key={technology} />;
+          } else if (technology === "Spring Security") {
+            return <SiSpringsecurity key={technology} />;
+          } else if (technology === "Java") {
+            return <FaJava key={technology} />;
+          } 
+          else if (technology === "css") {
+            return <FaCss3 key={technology} />;
+          } else if (technology === "sass") {
+            return <FaSass key={technology} />;
+          } 
+          else {
+            return <p>{technology}</p>;
           }
         })}
       </div>

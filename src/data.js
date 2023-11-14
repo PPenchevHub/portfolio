@@ -4,25 +4,25 @@
  export const Backend = [
     {
       id: 1,
-      title: "Festival Page",
+      title: "Backend for a note taking app",
       logo: "./assets/linkedin.png",
       description: "This is an example",
       img:
-        "https://osteuropa-tage.de/wp-content/uploads/2020/09/Cover_date-1.jpg",
-      githubLink: "https://github.com/",
-      liveLink: "https://www.facebook.com/",
-      technologies: ["react","wordpress"],
+        "./assets/notes.png",
+      githubLink: "https://github.com/PPenchevHub/Notes-App-SpringBoot",
+      liveLink: "https://github.com/PPenchevHub/Notes-App-SpringBoot",
+      technologies: ["Java","Postgresql", "Springboot", "JPA", "Hibernate"],
     },
     {
       id: 2,
-      title: "Festival Page",
+      title: "Backend for a blog",
       logo: "./assets/linkedin.png",
       description: "This is an example",
       img:
-        "https://osteuropa-tage.de/wp-content/uploads/2020/09/Cover_date-1.jpg",
-      githubLink: "https://github.com/",
+      "./assets/blog.png",
+      githubLink: "https://github.com/PPenchevHub/spring-boot-blogBackend",
       liveLink: "https://www.facebook.com/",
-      technologies: ["react","wordpress"],
+      technologies: ["Springboot", "Hibernate", "JPA","Spring Security","JWT", "Postgresql", "Java"],
     },
    
   ];
@@ -37,29 +37,31 @@
         "./assets/portfolio.png",
       githubLink: "https://github.com/PPenchevHub/portfolio",
       liveLink: "https://ppenchevhub.netlify.app/",
-      technologies: ["react","wordpress"],
+      technologies: ["react","sass","css"],
     },
     {
       id: 4,
-      title: "Festival Page",
+      title: "Pizza and cocktails ordering website",
       logo: "./assets/linkedin.png",
       description: "This is an example",
       img:
-        "https://osteuropa-tage.de/wp-content/uploads/2020/09/Cover_date-1.jpg",
+        "./assets/pizza.png",
       githubLink: "https://github.com/",
       liveLink: "https://www.facebook.com/",
-      technologies: ["react","wordpress"],
+      technologies: ["css","react", "javascript"],
     },
     {
-      title: "Festival Page",
+      id: 5,
+      title: "Markdown notetaking app",
       logo: "./assets/linkedin.png",
       description: "This is an example",
       img:
-        "https://osteuropa-tage.de/wp-content/uploads/2020/09/Cover_date-1.jpg",
+        "./assets/mdnotes.png",
       githubLink: "https://github.com/",
       liveLink: "https://www.facebook.com/",
-      technologies: ["react","wordpress"],
+      technologies: ["css","react", "javascript"],
     },
+   
     
   ];
   
@@ -73,11 +75,11 @@
         "https://osteuropa-tage.de/wp-content/uploads/2020/09/Cover_date-1.jpg",
       githubLink: "https://github.com/",
       liveLink: "https://www.facebook.com/",
-      technologies: ["react","wordpress"],
+      technologies: ["elementor","wordpress", "css","javascript"],
     },
     {
       id: 7,
-      title: "Festival Page",
+      title: "Staedtepartner Stettin",
       logo: "./assets/linkedin.png",
       description: "This is an example",
       img:
@@ -88,7 +90,7 @@
     },
     {
       id: 8,
-      title: "Festival Page",
+      title: "Natuerlich Kultur",
       logo: "./assets/linkedin.png",
       description: "This is an example",
       img:

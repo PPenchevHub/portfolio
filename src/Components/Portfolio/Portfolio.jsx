@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import PortfolioList from '../PortfolioList/PortfolioList';
 import './portfolio.scss'
-import { AllPortfolio, Frontend, Backend, WordpressPortfolio } from "../../data"
+import {  Frontend, Backend, WordpressPortfolio } from "../../data"
 import Popup from './Popup';
 import AnimationIntro from '../AnimationIntro/AnimationIntro';
 import Pointer from '../PointerComponent/Pointer';
