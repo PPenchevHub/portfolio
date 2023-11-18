@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Plamen Penchev - Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio! This project showcases my skills, projects, and experience to potential employers and collaborators. The portfolio is built using React and Sass, providing a dynamic and visually appealing presentation.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This portfolio is designed to highlight my expertise, projects, and accomplishments in the field of software development. The user-friendly interface allows visitors to explore my skills, view projects, and get in touch for potential collaborations or job opportunities.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Responsive Design:** The portfolio is optimized for various screen sizes, ensuring a seamless experience across devices.
+- **Project Showcase:** Highlight key projects with details on technologies used, challenges faced, and outcomes achieved.
+- **Skills Section:** Showcase a diverse set of skills and technologies I specialize in.
+- **Contact Form:** Provide an easy way for visitors to get in touch for job opportunities, collaborations, or inquiries.
+- **Dynamic Content:** Built using React for a dynamic and interactive user experience.
+- **Stylish Design:** Utilizes Sass for a clean and visually appealing design.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/PPenchevHub/portfolio.git
+    
+2. Navigate to the project directory:
 
-### `npm run build`
+    ```bash
+    cd portfolio
+    
+3. Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+   npm start
+    
+The portfolio should also be accessible at ppenchevhub.netlify.app.
 
-### `npm run eject`
+## Technologies Used
+  * React 
+  * Sass
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  * Navigate to the deployed portfolio: ppenchevhub.netlify.app.
+  * Explore various sections, including projects, skills, and contact information.
+  * Reach out via the provided contact form for potential job opportunities or collaborations.
+  
+## Screenshots
+Include screenshots of key sections of your portfolio to give users a preview.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contact
+* Email: ppenchevhub@gmail.com
+* LinkedIn: [Your LinkedIn Profile]
+* GitHub: [Your GitHub Profile]
+### Feel free to reach out for any inquiries or opportunities!
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License.
