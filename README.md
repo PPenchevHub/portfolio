@@ -38,7 +38,7 @@ This portfolio is designed to highlight my expertise, projects, and accomplishme
    npm start
     
 The portfolio should also be accessible 
-[here](ppenchevhub.netlify.app).
+[here](https://ppenchevhub.netlify.app).
 
 ## Technologies Used
   * React 
