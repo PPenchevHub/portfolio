@@ -47,7 +47,7 @@ The portfolio should also be accessible
 
 ## Usage
 
-  * Navigate to the deployed portfolio: ppenchevhub.netlify.app.
+  * Navigate to the deployed portfolio: https://ppenchevhub.netlify.app.
   * Explore various sections, including projects, skills, and contact information.
   * Reach out via the provided contact form for potential job opportunities or collaborations.
   
@@ -56,8 +56,8 @@ Include screenshots of key sections of your portfolio to give users a preview.
 
 ## Contact
 * Email: ppenchevhub@gmail.com
-* LinkedIn: [Your LinkedIn Profile]
-* GitHub: [Your GitHub Profile]
+* LinkedIn: https://www.linkedin.com/in/plamen-penchev-44a06611a/
+* GitHub: https://github.com/PPenchevHub
 ### Feel free to reach out for any inquiries or opportunities!
 
 ## License
