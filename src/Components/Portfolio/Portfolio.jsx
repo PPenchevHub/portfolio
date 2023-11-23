@@ -15,11 +15,7 @@ function Portfolio() {
   const aboutMeArray = ['P', 'o', 'r', 't', 'f','o','l', 'i','o']
 
   const list = [
-    // {
-    //   id:"all",
-    //   title: "All",
-    //   key: "1",
-    // }, 
+
     {
       id:"frontend",
       title: "Frontend",
@@ -39,9 +35,6 @@ function Portfolio() {
 
   useEffect(() =>{
     switch (selected) {
-     // case "all":
-       // setData(JavaPortfolio.concat(ReactPortfolio, WordpressPortfolio));
-        //break;
       case "backend":
         setData(Backend);
         break;
@@ -91,9 +84,12 @@ function Portfolio() {
       </ul>
       <div className="container">
         {data.map((d) =>(
+          <div className="wrapper">
           <div key={d.title} className="item" onClick={() => handleItemClick(d)}>
             <img src={d.img} alt="" />
-            <h3>{d.title}</h3>
+            
+          </div>
+          <h3>{d.title}</h3>
           </div>
         ))}
       </div>

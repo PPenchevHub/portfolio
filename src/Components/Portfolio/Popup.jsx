@@ -1,8 +1,8 @@
 import React from 'react';
 import "./Popup.scss";
 
-import { FaWordpress, FaReact,FaJava, FaCss3, FaSass, FaDatabase} from "react-icons/fa";
-import {SiSpringboot, SiSpringsecurity, SiJsonwebtokens, SiElementor, SiJavascript} from 'react-icons/si';
+import { FaWordpress, FaReact,FaJava, FaCss3, FaSass, FaDatabase,FaNodeJs} from "react-icons/fa";
+import {SiSpringboot, SiSpringsecurity, SiJsonwebtokens, SiElementor, SiJavascript,SiExpress, SiPhp} from 'react-icons/si';
 import {SiHibernate} from 'react-icons/si';
 import {BiLogoPostgresql} from 'react-icons/bi'
 
@@ -30,12 +30,18 @@ function Popup({ selectedItem, handleClosePopup }) {
             return <SiElementor key={technology} />;
           }else if (technology === "javascript") {
             return <SiJavascript key={technology} />;
-          }  else if (technology === "Springboot") {
+          }else if (technology === "Nodejs") {
+            return <FaNodeJs key={technology} />;
+          }else if (technology === "express") {
+            return <SiExpress key={technology} />;
+          }else if (technology === "Springboot") {
             return <SiSpringboot key={technology} />;
           }else if (technology === "Postgresql") {
             return <BiLogoPostgresql key={technology} />;
           }else if (technology === "JWT") {
             return <SiJsonwebtokens key={technology} />;
+          }else if (technology === "php") {
+            return <SiPhp key={technology} />;
           }
           else if (technology === "Hibernate") {
             return <SiHibernate key={technology} />;
