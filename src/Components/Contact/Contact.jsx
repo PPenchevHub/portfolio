@@ -11,14 +11,11 @@ export default function Contact() {
     e.preventDefault();
 
     // Validate email and messageText here if needed
-
-    emailjs
-      .send(
-        "service_s70jlwq",
-        "template_29z3spd",
-        { to_email: email, message: messageText },
-        "4zzqV3APBQx5QFROY"
-      )
+ 
+    emailjs.send("service_s70jlwq","template_29z3spd",{
+      from_name: email,
+      message: messageText,
+    },"4zzqV3APBQx5QFROY") 
       .then(
         (response) => {
           console.log("Email sent:", response);
@@ -31,6 +28,7 @@ export default function Contact() {
           );
         }
       );
+      e.target.reset();
   };
 
   return (
