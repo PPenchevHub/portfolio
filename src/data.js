@@ -55,7 +55,7 @@
     {
       id: 6,
       title: "Markdown notetaking app",
-      description: "A markdown editor with a theme switcher, local storage and download and preview functions",
+      description: "A markdown editor with a theme switcher, local storage, download and preview functions",
       img:
         "./assets/mdnotes.png",
       githubLink: "https://github.com/",
@@ -68,20 +68,20 @@
   export const WordpressPortfolio = [
     {
       id: 7,
+      title: "Staedtepartner Stettin",
+      description: "Designed and developed the website, coded most of the components from scratch and implemented with elementor.",
+      img: "./assets/stettin.png",
+      liveLink: "https://staedtepartner-stettin.org/",
+      technologies: ["elementor","wordpress","css", "javascript", "php"],
+    },
+    {
+      id: 8,
       title: "Festival Page",
       description: "A page to represent a festival in the city in Berlin, where i developed the theme and some of the plugins.",
       img:
         "https://osteuropa-tage.de/wp-content/uploads/2020/09/Cover_date-1.jpg",
       liveLink: "https://osteuropa-tage.de/",
       technologies: ["wordpress", "css","javascript"],
-    },
-    {
-      id: 8,
-      title: "Staedtepartner Stettin",
-      description: "Designed and developed the website, coded most of the components from scratch and implemented with elementor.",
-      img: "./assets/stettin.png",
-      liveLink: "https://staedtepartner-stettin.org/",
-      technologies: ["elementor","wordpress","css", "javascript", "php"],
     },
     {
       id: 9,
