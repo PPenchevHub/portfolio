@@ -39,8 +39,8 @@ useEffect(() => {
                of effective communication.
                Let's connect and create amazing software together!
             </p>
-            <button className="btn-download">Hire me </button>
-            <button className="btn-download">Resume</button>
+            <a href="#contact"> <button className="btn-download">Hire me </button></a>
+           <a href="./assets/PlamenPenchev.pdf"><button className="btn-download">Resume</button></a>
                  </div>
         <div className="box-right">
 
@@ -52,7 +52,7 @@ useEffect(() => {
 
       </div>
       
-      <a href="#portfolio">
+      <a href="#portfolio" className='arrow'>
           <img src="assets/arrow.png" alt="" />
         </a>
 
